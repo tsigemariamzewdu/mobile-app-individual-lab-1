@@ -24,8 +24,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.newproject.ui.theme.NewprojectTheme
-import kotlin.code
+import com.example.mobileappplab1.ui.theme.MobileApppLab1Theme
+
 
 @Composable
 fun CourseCard(
@@ -91,5 +91,22 @@ fun CourseCard(
                 )
             }
         }
+    }
+}
+@Preview(showBackground = true)
+@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Composable
+fun CourseCardPreview() {
+    MobileApppLab1Theme {
+   CourseCard(
+            course = Course(
+                id = 1,
+                title = "Sample Course",
+                code = "CS101",
+                creditHours = 3,
+                description = "This is a sample course description",
+                prerequisites = "None"
+            )
+        )
     }
 }
