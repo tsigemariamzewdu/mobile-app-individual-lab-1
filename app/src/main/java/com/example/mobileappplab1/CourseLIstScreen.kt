@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.dp
 import com.example.mobileappplab1.ui.theme.MobileApppLab1Theme
 import com.example.mobileappplab1.Course
 import com.example.mobileappplab1.CourseCard
+import com.example.mobileappplab1.data.CourseData
 
 
 @Composable
@@ -32,6 +33,6 @@ fun CourseListScreen(courses: List<Course>) {
 @Composable
 fun CourseListScreenPreview() {
     MobileApppLab1Theme {
-        com.example.mobileappplab1.CourseListScreen(courses = Course.sampleCourses)
+        com.example.mobileappplab1.CourseListScreen(courses = CourseData.sampleCourses)
     }
 }
